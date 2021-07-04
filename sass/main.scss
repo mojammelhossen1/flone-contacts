@@ -1,0 +1,475 @@
+// Bootstrap Customize
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+$font-family-sans-serif:'Poppins',
+sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+.nav-link {
+    color: #555252 !important;
+
+    &:hover {
+        color: #BB75FD !important;
+    }
+}
+
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//Custom Code
+body {
+    background: #ffffff;
+}
+
+.li-bar {
+    height: 12px;
+    width: 1px;
+    background-color: #737373;
+}
+
+.nav-icon {
+    font-size: 1.1rem;
+}
+
+.custom-dropdown {
+    position: relative;
+
+    &:hover ul {
+        transform: scaleY(1);
+    }
+
+    ul {
+        position: absolute;
+        width: 95px;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: all 0.5s ease 0s;
+        background-color: #fff;
+        box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+        padding: 15px;
+        line-height: .8;
+        z-index: 100;
+
+        li {
+            font-size: 13px;
+        }
+    }
+
+}
+
+.custom-dropdown2 {
+    position: relative;
+    box-sizing: border-box;
+
+    &:hover div {
+        transform: scaleY(1);
+    }
+
+    div {
+        position: absolute;
+        width: 700px;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: all 0.5s ease 0s;
+        background-color: #fff;
+        box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+        padding: 25px;
+        line-height: 1;
+        z-index: 100;
+
+        ul {
+            margin-right: 55px;
+
+            li {
+                font-size: 13px;
+
+                .nav-link-title {
+                    color: rgb(0, 0, 0) !important;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        color: #BB75FD !important;
+                        transform: translateX(0px);
+                    }
+                }
+
+                a {
+                    transition: all 0.5s ease 0s;
+
+                    &:hover {
+                        transform: translateX(15px);
+
+
+                    }
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    opacity: 0;
+                    background-color: #BB75FD;
+                    width: 8px;
+                    height: 8px;
+                    transform: translateY(10px);
+                    border-radius: 50%;
+                    transition: all 0.3s ease 0s;
+                }
+
+                &:hover:before {
+                    opacity: 1;
+                }
+            }
+
+            .nav-link-title-h {
+
+                &:before {
+                    display: none !important;
+
+                }
+
+            }
+        }
+    }
+
+
+
+
+}
+
+.custom-dropdown4,
+.custom-dropdown5 {
+    div {
+        width: 245px;
+    }
+}
+
+.nav-bar-top-txt {
+    .red {
+        color: #ff1c1c;
+    }
+}
+
+.horizontal-line-1 {
+    margin-top: -7px;
+}
+
+.top-sec {
+    background-color: #f7f7f7;
+    padding: 30px 0px;
+    margin: 20px 0px;
+    font: 15px;
+    font-weight: 500;
+
+    span {
+        margin: 0px 5px;
+
+        a {
+            color: #5b5858;
+            transition: all 0.5s ease 0s;
+            text-decoration: none;
+
+            &:hover {
+                color: #BB75FD !important;
+            }
+        }
+    }
+
+}
+
+
+
+
+.main-sec {
+    margin: 95px 0px;
+
+    .container {
+        .google-maps {
+            margin-bottom: 15px;
+
+            iframe {
+                width: 100%;
+                height: 555px;
+            }
+        }
+
+        .row {
+
+            .contacts {
+                padding: 120px 90px;
+                background-color: #f1f1f1;
+
+
+
+                div {
+                    display: flex;
+                    margin-bottom: 20px;
+
+
+                    &:hover .icon span {
+                        color: #fff;
+                        background-color: #000;
+                    }
+
+                    .icon {
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 20px;
+
+                        span {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 1px solid black;
+                            border-radius: 50%;
+                            font-size: 20px;
+                            height: 40px;
+                            width: 40px;
+                            transition: all 0.5s ease 0s;
+
+                        }
+                    }
+
+                    div {
+                        span {
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #404040;
+                        }
+
+                    }
+                }
+
+                .follow-icon {
+                    display: block;
+
+                    h3 {
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #4d4d4d;
+                        margin-bottom: 15px;
+                    }
+
+                    .icon-wrapper {
+                        display: flex;
+                        justify-content: center;
+
+                        span {
+                            margin: 0px 11px;
+
+                            a {
+                                text-decoration: none;
+                                color: #4d4d4d;
+                                font-size: 14px;
+                                transition: all 0.5s ease 0s;
+
+                                &:hover {
+                                    color: #a749ff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .form-box {
+                padding: 75px 90px;
+                background-color: #f1f1f1;
+
+                button {
+                    padding: 10px 45px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #fff;
+                    background-color: #333;
+                    border: none;
+                    border-radius: 3px;
+                    transition: all 0.5s ease 0s;
+
+                    &:hover {
+                        background-color: #a749ff;
+                    }
+                }
+
+                h3 {
+                    // text-align: center;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #4d4d4d;
+                    margin-bottom: 15px;
+                }
+
+                .row {
+                    div {
+
+                        input,
+                        textarea {
+                            width: 100%;
+                            background: none;
+                            border: 1px solid #ddd;
+                            font-size: 14px;
+                            font-weight: 400;
+                            outline: none;
+                            padding: 10px;
+                            margin-bottom: 30px;
+                            border-radius: 2px;
+                        }
+
+                        textarea {
+                            padding-top: 14px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 85px;
+    background-color: #f1f1f1;
+    padding: 100px 0px;
+
+    .footer-logo {
+        display: grid;
+        align-items: center;
+
+        .footer-item {
+            .footer-text-sec {
+                span:nth-child(2) {
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+
+    .footer-item {
+        .footer-head-sec {
+            h6 {
+                font-size: 16px;
+                font-weight: 500;
+                color: #313131;
+                margin-bottom: 20px;
+            }
+        }
+
+        .footer-text-sec {
+            span {
+                display: block;
+                font-size: 14px;
+                font-weight: 400;
+                color: #5d5d5d;
+                margin-top: 10px;
+
+                &:hover a {
+                    color: #a749ff;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #5d5d5d;
+                    transition: all 0.5s ease 0s;
+                }
+            }
+
+            .text-decoration {
+                a {
+                    color: #696969;
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .custom-footer-text {
+            width: 310px;
+            margin-bottom: 30px;
+        }
+
+        input {
+            width: 87%;
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: 1px solid #ddd;
+            padding: 5px 0px;
+            font-size: 13px;
+            color: #333;
+            font-weight: 400;
+        }
+    }
+}
+
+.goTopBtn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    background: #a749ff;
+    height: 50px;
+    width: 50px;
+
+    font-size: 17px;
+    border-radius: 50%;
+
+    &:hover a svg,
+    i {
+        color: #fff;
+        // animation-fill-mode: al;
+        animation-name: go-topBtn-animate;
+    }
+
+    a {
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg,
+        i {
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+    }
+
+
+
+
+    @keyframes go-topBtn-animate {
+
+        0% {
+            transform: translateY(35px);
+        }
+
+        100% {
+            transform: translateY(0px);
+
+        }
+    }
+
+
+}
